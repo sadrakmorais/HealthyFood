@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Considerações sobre o teste:
 
-O teste foi desenvolvido utilizando react e as principais bibliotecas que são utilizadas juntamente com ele. O código está estruturado de uma maneira que consiga escalar com novas páginas, rotas, componentes e com estrura para receber dados de api e compartilhar propriedades entre os componentes criados.
+O teste foi desenvolvido utilizando react e as principais bibliotecas que são utilizadas juntamente com ele. O código está estruturado de uma maneira que consiga escalar com novas páginas, rotas, componentes e com estrura para receber dados de api e compartilhar propriedades entre os componentes criados. A landing page também conta com responsividade tanto para desktop quanto para tablets e smartphone.
 
 ## Intalação e inicialização
 
