@@ -47,12 +47,12 @@ const SignUp = () => {
 				<img src={img1} alt='' />
 			</div>
 			<div className='signup'>
-				<h1>Cadastrar</h1>
+				<h1>Register</h1>
 
 				<S.Form>
 					<form onSubmit={handleSubmit(onSubmit)} fullWidth>
 						<Box mb={1} fullWidth>
-							<span>Nome</span>
+							<span>Name</span>
 
 							<TextField
 								variant='standard'
@@ -66,7 +66,7 @@ const SignUp = () => {
 								helperText={errors?.name ? errors.name.message : null}
 							/>
 
-							<span>Data de nascimento</span>
+							<span>Date of birth</span>
 							<TextField
 								variant='standard'
 								fullWidth
@@ -107,7 +107,7 @@ const SignUp = () => {
 								helperText={errors?.cep ? errors.cep.message : null}
 							/>
 
-							<span>Cidade</span>
+							<span>City</span>
 							<TextField
 								variant='standard'
 								fullWidth
@@ -119,7 +119,7 @@ const SignUp = () => {
 								error={!!errors?.city}
 								helperText={errors?.city ? errors.city.message : null}
 							/>
-							<span>Endereço</span>
+							<span>Adress</span>
 							<TextField
 								variant='standard'
 								fullWidth
@@ -132,7 +132,7 @@ const SignUp = () => {
 								helperText={errors?.adress ? errors.adress.message : null}
 							/>
 
-							<span>Estado</span>
+							<span>State</span>
 							<TextField
 								variant='standard'
 								fullWidth
@@ -150,13 +150,13 @@ const SignUp = () => {
 							variant='contained'
 							sx={{ background: ' #badc58' }}
 							fullWidth>
-							Cadastrar
+							REGISTER
 						</Button>
 					</form>
 				</S.Form>
 				<span>
-					Ao continuar, você concorda com os <strong>Termos de Serviço</strong> da Healthy
-					Food e confirma que leu a nossa <strong>Política de Privacidade</strong>
+					By proceeding, you agree to the Healthy <strong>Terms of Service</strong>
+					Food and confirm that you have read our <strong>Privacy Policy</strong>{' '}
 				</span>
 			</div>
 		</S.Wrapper>
