@@ -6,6 +6,7 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import img1 from '../../assets/marginalia-1188.png';
 import { useNavigate } from 'react-router-dom';
+import getCep from '../../services/api';
 
 const SignUp = () => {
 	const history = useNavigate();
@@ -19,26 +20,22 @@ const SignUp = () => {
 	const onSubmit = (data) => {
 		console.log(data);
 		history('/');
-
 		localStorage.setItem('Dados Cadastro', JSON.stringify(data));
 		document.cookie = ` Dados Cadastro=${JSON.stringify(data)}`;
 	};
+
 	const checkCEP = (e) => {
 		const cep = e.target.value.replace(/\D/g, '');
-		console.log(cep);
 
-		fetch(`https://viacep.com.br/ws/${cep}/json/`)
-			.then((res) => res.json())
-			.then((data) => {
-				console.log(data);
-				setValue('city', data.localidade);
+		getCep(cep).then((data) => {
+			console.log(data);
+			setValue('city', data.localidade);
+			data.logradouro
+				? setValue('adress', data.logradouro)
+				: setValue('adress', 'Endereço não encontrado');
 
-				data.logradouro
-					? setValue('adress', data.logradouro)
-					: setValue('adress', 'Endereço não encontrado');
-
-				setValue('uf', data.uf);
-			});
+			setValue('uf', data.uf);
+		});
 	};
 
 	return (

@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
 	width: 100%;
 	padding: 10px;
+	display: flex;
+	flex-direction: column;
 	h1 {
 		font-size: 1.875em;
 		color: var(--theme-blue1);
@@ -23,17 +25,17 @@ export const Wrapper = styled.div`
 		align-items: center;
 	}
 
+	.containerCarousel {
+		width: 100%;
+		display: flex;
+		max-width: 1200px;
+		align-self: center;
+		margin-top: 32px;
+	}
+
 	@media (max-width: 800px) {
 		h1 {
 			font-size: 1.5em;
 		}
 	}
-`;
-export const PostList = styled.section`
-	display: flex;
-	width: 100%;
-	margin-top: 32px;
-	max-width: 1092px;
-	overflow-x: auto;
-	gap: 16px;
 `;

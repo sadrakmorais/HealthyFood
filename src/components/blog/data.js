@@ -20,6 +20,16 @@ const data = [
 	},
 	{
 		id: randomId(),
+		imgPost: img1,
+		tittle: `Quick-start guide
+    to nuts and seeds`,
+		author: {
+			avatar: avt1,
+			name: randomTraderName(),
+		},
+	},
+	{
+		id: randomId(),
 		imgPost: img2,
 		tittle: `Nutrition: Tips for
     Improving Your Health`,
