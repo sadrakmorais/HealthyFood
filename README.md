@@ -3,7 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ### Acesso remoto através do Heroku:
-`https://healthy-food-teste.herokuapp.com/`
+`https://healthy-food-ten.vercel.app/home/`
 
 ## Considerações sobre o teste:
 
