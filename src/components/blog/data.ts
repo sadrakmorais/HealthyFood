@@ -7,6 +7,7 @@ import avt2 from '../../assets/Photo-1.svg';
 import avt3 from '../../assets/Photo-2.svg';
 import avt4 from '../../assets/Photo-3.svg';
 import { randomTraderName, randomId } from '@mui/x-data-grid-generator';
+
 const data = [
 	{
 		id: randomId(),

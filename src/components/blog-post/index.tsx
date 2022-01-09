@@ -1,7 +1,11 @@
 import React from 'react';
 import * as S from './styled';
 
-const BlogPost = ({ post }) => {
+type Props = {
+	post: any,
+}
+
+const BlogPost = ({ post }: Props) => {
 	return (
 		<S.Wrapper>
 			<img src={post.imgPost} alt='' />

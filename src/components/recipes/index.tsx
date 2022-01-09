@@ -3,6 +3,7 @@ import * as S from './styles';
 import data from './data';
 import CardRecipe from '../card-recipes';
 
+
 const Recipes = () => {
 	return (
 		<S.Recipes id='recipes'>
@@ -12,8 +13,8 @@ const Recipes = () => {
 				Consonantia, there live the blind texts.
 			</span>
 			<section>
-				{data.map((recipe, index) => (
-					<CardRecipe recipe={recipe} key={data.index} />
+				{data.map((recipe) => (
+					<CardRecipe key={recipe.id}  recipe={recipe}/>
 				))}{' '}
 			</section>
 		</S.Recipes>

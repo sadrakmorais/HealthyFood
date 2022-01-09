@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import * as S from './styles';
-
 import Intro from '../../components/intro';
 import Recipes from '../../components/recipes';
 import BestServices from '../../components/best-services';
@@ -10,9 +9,11 @@ import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import * as Scroll from 'react-scroll';
 
 const LandingPage = () => {
+
 	const [goToTop, setGoToTop] = useState(false);
 
 	useEffect(() => {
+
 		const scrollListener = () => {
 			window.scrollY > 300 ? setGoToTop(true) : setGoToTop(false);
 		};

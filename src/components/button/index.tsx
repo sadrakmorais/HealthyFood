@@ -1,7 +1,9 @@
 import React from 'react';
 import * as S from './styles';
-
-const Button = ({ children, ...rest }) => {
+type Props = {
+	children: any,
+}
+const Button = ({ children, ...rest }: Props) => {
 	return <S.Button {...rest}>{children}</S.Button>;
 };
 
