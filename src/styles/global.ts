@@ -25,7 +25,7 @@ img{
         font-family: 'Montserrat', sans-serif;
     }
 
-    span,button,p,input,li{
+   button,p,input,li{
         font-family: 'Mulish', sans-serif;
     }
 

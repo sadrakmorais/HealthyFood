@@ -7,6 +7,10 @@ export const Wrapper = styled.div`
 	padding: 50px;
 	overflow-y: auto;
 
+	.illustration {
+			width: 60%;
+		}
+
 	.signup {
 		width: 70%;
 		padding: 50px;
@@ -25,6 +29,11 @@ export const Wrapper = styled.div`
 		strong {
 			color: var(--theme-blue1);
 		}
+		@media (max-width: 800px){
+		padding:20px;
+
+	}
+
 	}
 
 	@media (max-width: 1000px) {
@@ -32,7 +41,7 @@ export const Wrapper = styled.div`
 		padding: 0px;
 
 		.illustration {
-			width: 50%;
+			width: 30%;
 		}
 	}
 
@@ -45,12 +54,9 @@ export const Wrapper = styled.div`
 
 export const Form = styled.div`
 	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: 30px;
-	form {
-		width: 100%;
+  padding:50px;
+
+	@media (max-width: 800px){
+		padding:0;
 	}
 `;

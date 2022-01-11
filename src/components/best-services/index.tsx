@@ -1,6 +1,5 @@
 import React from 'react';
 import * as S from './styles';
-import Button from '../button';
 import img1 from '../../assets/bloco_services.svg';
 
 const BestServices = () => {
@@ -23,7 +22,7 @@ const BestServices = () => {
 					A small river named Duden flows by their place and supplies it with the
 					necessary regelialia.
 				</span>
-				<Button style={{ width: '150px' }}>Know More</Button>
+				<button >Know More</button>
 			</section>
 		</S.Wrapper>
 	);

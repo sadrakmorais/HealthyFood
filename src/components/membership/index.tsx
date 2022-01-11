@@ -1,7 +1,7 @@
 import React from 'react';
 import * as S from './styles';
 import img1 from '../../assets/bloco_final_image.svg';
-import Button from '../button';
+
 
 const Membership = () => {
 	return (
@@ -12,7 +12,7 @@ const Membership = () => {
 
 					<div className='join'>
 						<input type='text' placeholder='Enter your email adress' />
-						<Button style={{ width: '93px' }}>Join</Button>
+						<button>Join</button>
 					</div>
 				</div>
 			</div>
