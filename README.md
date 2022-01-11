@@ -3,7 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ### Acesso remoto através do Heroku:
-`https://healthy-food-teste.herokuapp.com/`
+`https://healthy-food-ten.vercel.app/home/`
 
 ## Considerações sobre o teste:
 
@@ -31,8 +31,7 @@ Inicializando com NPM:
 `npm start`
 
 ### Ao iniciar, será redirecionado ao endereço http://localhost:3000/home
-### a segunda rota disponível é a rota de cadastro http://localhost:3000/signup
-### que pode ser acessada ao clicar no botão REGISTER
+### A segunda rota disponível é a rota de cadastro http://localhost:3000/signup que pode ser acessada ao clicar no botão REGISTER
 
 Após a validação dos dados do formulário da pagina Register, o usuário é redirecionado para a página Home, e seus dados são gravados no LocalStorage e nos Cookies.
 
@@ -48,6 +47,7 @@ Após a validação dos dados do formulário da pagina Register, o usuário é r
 ### react-scroll
 ### styled-components
 ### @mui/material
+### react-multi-carousel
 
 
 
